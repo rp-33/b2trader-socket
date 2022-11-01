@@ -15,7 +15,7 @@ server.listen(app.get('port'), () => {
             let data = await b2trader.getSummaries();
             io.emit('summary',data.result);
             io.emit('summary-top',data.criptoResult);
-        }, 5000);
+        }, 6000);
 
 
         
