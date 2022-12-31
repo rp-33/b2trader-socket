@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const url = 'https://criptocurrency-files-static.herokuapp.com/images';
 
-export const cryptocurrency = {
+const cryptocurrency = {
     'BTC_USDT' : {
         'name' : 'Bitcoin',
         'code' : 'BTC',
@@ -119,7 +119,7 @@ export const cryptocurrency = {
     },
 }
 
-export const cryptoAvailable = [
+const cryptoAvailable = [
     'BTC_USDT',
     'ETH_USDT',
     'LTC_USDT',
@@ -140,8 +140,6 @@ export const cryptoAvailable = [
     'BAT_USDT',
     'MANA_USDT'
 ];
-
-const cryptoAvailable = ['BTC_USD','ETH_USD'];
 
 class B2trader {
     constructor(io){
